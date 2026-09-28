@@ -45,7 +45,7 @@ Write-Host "  출력: $outPath"
 Write-Host ""
 
 $script = Join-Path $here "generate_report.py"
-python $script --pc "$pc" --mo "$mo" --card "$card" --out "$outPath"
+py $script --pc "$pc" --mo "$mo" --card "$card" --out "$outPath"
 
 if (Test-Path $outPath) {
   Write-Host ""
